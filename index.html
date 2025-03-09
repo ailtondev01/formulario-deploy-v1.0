@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form 1.0</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <p>
+                <label for="inNome">Nome</label><br>
+                <input type="text" id="inNome" required>
+            </p>
+            <p>
+                <label for="inCpf">CPF</label><br>
+                <input type="text" id="inCpf" maxlength="14" placeholder="000.000.000-00" required
+                    oninput="mascaraCPF(this)">
+            </p>
+            <p>
+                <label for="inData">Data de Nascimento</label><br>
+                <input type="date" id="inData" required>
+            </p>
+            <p>
+                <label for="inMae">Nome da Mãe</label><br>
+                <input type="text" id="inMae" required>
+            </p>
+            <p>
+                <label for="inPai">Nome do Pai</label><br>
+                <input type="text" id="inPai" required>
+            </p>
+            <p>
+                <label for="cep">CEP</label><br>
+                <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000" required
+                    oninput="mascaraCEP(this)">
+            </p>
+            <p>
+                <label for="inLogradouro">Endereço</label><br>
+                <input type="text" id="inLogradouro" name="logradouro" required>
+            </p>
+            <p>
+                <label for="inBairro">Bairro</label><br>
+                <input type="text" id="inBairro" name="bairro" required>
+            </p>
+            <p>
+                <label for="inCidade">Cidade</label><br>
+                <input type="text" id="inCidade" name="cidade" required>
+            </p>
+            <p>
+                <label for="inEstado">Estado</label><br>
+                <input type="text" id="inEstado" name="estado" required>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </form>
+    </div>
+</body>
+
+<script src="js/index.js"></script>
+
+</html>

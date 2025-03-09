@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Alinhamento no topo */
+    min-height: 100vh;
+    /* Ocupa 100% da altura da tela */
+    padding: 20px;
+    /* Garante que não fique colado nas bordas */
+    overflow-x: hidden;
+    /* Impede rolagem horizontal */
+}
+
+/* Container do formulário */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    /* Largura máxima do formulário */
+    margin-top: 1px;
+    /* Deixa um espaço superior */
+    margin-bottom: 1px;
+    /* Espaço inferior */
+    overflow: hidden;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilo das labels */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo dos inputs */
+input[type="text"],
+input[type="date"],
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    /* Faz com que os campos ocupem 100% da largura disponível */
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo de foco nos inputs */
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo do botão de envio */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+/* Placeholder para inputs */
+input::placeholder {
+    color: #888;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+}
